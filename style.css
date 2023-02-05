@@ -1,0 +1,127 @@
+:root{
+    --primary:#545563;
+    --secondary:#4E60FF;
+    --teritary:#2B2B43;
+}
+
+body{
+    background: linear-gradient(90deg, white 50%, var(--secondary) 50%);
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+}
+
+div form{
+    display: grid;
+    grid-column: 1/21;
+    grid-template-columns: repeat(20, 1fr);
+}
+
+.topsentence{
+    color: var(--secondary);
+    grid-column: 3/6;
+    grid-row: 1;
+    font-family: Calibri;
+    font-size: 18px;
+}
+.topsentence::first-line{
+    color: var(--teritary);
+}
+
+#logintext{
+    grid-column: 3/9;
+    grid-row: 1;
+    font-size: 58px;
+    font-family: Calibri;
+    margin-bottom: 0;
+}
+
+#logininfo{
+    grid-column: 3/9;
+    grid-row: 2;
+    font-family: Calibri;
+    color: var(--primary);
+    margin-bottom: 40px;
+}
+
+
+div .inputarea{
+    border-style: solid;
+    border-color: #C7C8D2;
+    border-radius: 0.5em;
+    grid-column: 3/8;
+}
+
+#mailtext{
+    grid-column: 3/5;
+    grid-row: 1;
+    font-family: Calibri;
+}
+
+#mail{
+    grid-column: 3/9;
+    grid-row: 2;
+    margin: 0 0 20px 0;
+    padding: 8px 0 8px 8px;
+}
+
+#passwordtext{
+    grid-column: 3/5;
+    grid-row: 3;
+    font-family: Calibri;
+}
+
+#password{
+    grid-column: 3/9;
+    grid-row: 4;
+    margin: 0 0 20px 0;
+    padding: 8px 0 8px 8px;
+}
+
+#logcheck{
+    grid-column: 3/4;
+    grid-row: 5;
+}
+
+#checkboxtext{
+    columns: val(--primary);
+    grid-row: 5;
+    grid-column: 4/7;
+    font-family: Calibri;
+}
+
+#loginbutton{
+    color: aliceblue;
+    grid-column: 3/9;
+    grid-row: 6;
+    background-color: var(--secondary);
+    border-radius: 0.5em;
+    padding: 8px 0 8px 0;
+    margin-top: 20px;
+    font-family: Calibri;
+    border-color: #4E60FF;
+}
+
+#forgottext{
+    grid-column: 3/9;
+    grid-row: 7;
+    text-align: center;
+    font-family: Calibri;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+#signuptext{
+    grid-column: 3/8;
+    font-family: Calibri;
+    position: fixed;
+    bottom: 0%;
+    left: 18%;
+}
+
+div p a{
+    color: var(--secondary);
+    text-decoration: none;
+}
